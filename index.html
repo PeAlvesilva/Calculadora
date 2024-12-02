@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avançada com Math.js</title>
+    <link rel="stylesheet" href="calc_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" class="display" disabled>
+        <div class="buttons">
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('+')" style="background-color: aquamarine;">+</button>
+
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('-')" style="background-color: aquamarine;">-</button>
+
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('*')" style="background-color: aquamarine;">*</button>
+
+            <button onclick="clearDisplay()" style="background-color: rgb(255, 126, 126);">C</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="calculateResult()" style="background-color: rgb(194, 255, 103);">=</button>
+            <button onclick="appendValue('/')" style="background-color: aquamarine;">/</button>
+
+            <button onclick="calculateSqrt()" style="background-color: rgb(163, 163, 255);">√</button>
+            <button onclick="appendValue('sin(')" style="background-color: rgb(163, 163, 255);">sin</button>
+            <button onclick="appendValue('cos(')" style="background-color: rgb(163, 163, 255);">cos</button>
+            <button onclick="appendValue('tan(')" style="background-color: rgb(163, 163, 255);">tan</button>
+
+            <button onclick="appendValue('log10(')" style="background-color: rgb(163, 163, 255);">log</button>
+            <button onclick="appendPi()" style="background-color: rgb(163, 163, 255);">π</button>
+            <button onclick="appendValue('**')" style="background-color: rgb(163, 163, 255);">x<sup>y</sup></button>
+            <button onclick="appendValue('!')" style="background-color: rgb(163, 163, 255);">!</button>
+
+            <button onclick="appendValue('(')" style="background-color: rgb(163, 163, 255);">(</button>
+            <button onclick="appendValue(')')" style="background-color: rgb(163, 163, 255);">)</button>
+            <button onclick="appendValue('.')" style="background-color: rgb(163, 163, 255);">.</button>
+            <button onclick="calculatePercentage()" style="background-color: rgb(163, 163, 255);">%</button>
+
+            <button onclick="clearLast()" style="background-color: rgb(255, 90, 90); font-weight: bold;">←</button>
+        </div>
+    </div>
+
+    <script src="calc_script.js"></script>
+    
+</body>
+</html>
